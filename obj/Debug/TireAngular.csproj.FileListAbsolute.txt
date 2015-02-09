@@ -1,0 +1,5 @@
+c:\users\renz\documents\visual studio 2013\Projects\TireAngular\TireAngular\bin\TireAngular.dll.config
+c:\users\renz\documents\visual studio 2013\Projects\TireAngular\TireAngular\bin\TireAngular.dll
+c:\users\renz\documents\visual studio 2013\Projects\TireAngular\TireAngular\bin\TireAngular.pdb
+c:\users\renz\documents\visual studio 2013\Projects\TireAngular\TireAngular\obj\Debug\TireAngular.dll
+c:\users\renz\documents\visual studio 2013\Projects\TireAngular\TireAngular\obj\Debug\TireAngular.pdb
