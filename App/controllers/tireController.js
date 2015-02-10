@@ -1,12 +1,12 @@
 ﻿'use strict';
 
 var removeTemplate = '<input type="button" value="remove" ng-click="removeRow($index)" />';
-var dropdownMags = '<select id="addons" ng-model="tire.addons">' +
+var dropdownMags = '<select  ng-model="tire.addons">' +
     '<option value="15inch">15 inches mags</option>' +
     '<option value="17inch">17 inches mags</option>' +
     '<option value="18inch">18 inches mags</option>' +
     '</select>';
-var quantityTemplate = '<input id="quantity" type="number" min="0" ng-model="tire.quantity" />';
+var quantityTemplate = '<input type="number" min="0" ng-model="tire.quantity" />';
 app.controller('tireController',  function ($scope, $http, $timeout) {
 
     $scope.myData = [{ brand: "Good Year", description: "GoodYear Excellence", quantity: 4, addons: "15inch" },
@@ -19,7 +19,7 @@ app.controller('tireController',  function ($scope, $http, $timeout) {
         enableRowSelection: false,
         enableCellEditOnFocus: true,
         columnDefs: [{ field: 'brand', displayName: 'brand', width: 120, enableCellEdit: true }, { field: 'description', displayName: 'description', width: 120, enableCellEdit: true },
-            { field: 'quantity', displayName: 'quantity', enableCellEdit: true, cellTemplate: quantityTemplate }, { field: 'addons', displayName: 'addons', width: 120, enableCellEdit: true, cellTemplate: dropdownMags }, { field: 'remove', displayName: '', cellTemplate: removeTemplate }]
+            { field: 'quantity', displayName: 'quantity', enableCellEdit: true, width: 150, cellTemplate: quantityTemplate }, { field: 'addons', displayName: 'addons', width: 150, enableCellEdit: true, cellTemplate: dropdownMags }, { field: 'remove', displayName: '', cellTemplate: removeTemplate }]
     };
 
     $scope.removeRow = function () {

@@ -3,4 +3,3 @@ c:\users\renz\documents\visual studio 2013\Projects\TireAngular\TireAngular\bin\
 c:\users\renz\documents\visual studio 2013\Projects\TireAngular\TireAngular\bin\TireAngular.pdb
 c:\users\renz\documents\visual studio 2013\Projects\TireAngular\TireAngular\obj\Debug\TireAngular.dll
 c:\users\renz\documents\visual studio 2013\Projects\TireAngular\TireAngular\obj\Debug\TireAngular.pdb
-C:\Users\rEnZ\documents\visual studio 2013\Projects\TireAngular\TireAngular\obj\Debug\TireAngular.csprojResolveAssemblyReference.cache
