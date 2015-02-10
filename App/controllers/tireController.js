@@ -8,8 +8,11 @@ app.controller('tireController', function ($scope, $timeout) {
     $scope.gridOptions = {
         data: 'myData',
         showSelectionCheckbox: false,
-        columnDefs: [{ field: 'id', displayName: 'id' }, { field: 'brand', displayName: 'brand', width: 120 }, { field: 'description', displayName: 'description', width: 120 },
-            { field: 'quantity', displayName: 'quantity' }, { field: 'addons', displayName: 'addons', width: 120 }, { field: 'remove', displayName: '', cellTemplate: removeTemplate }]
+        enableCellSelection: true,
+        enableRowSelection: false,
+        enableCellEditOnFocus: true,
+        columnDefs: [{ field: 'id', displayName: 'id', enableCellEdit: false }, { field: 'brand', displayName: 'brand', width: 120, enableCellEdit: true }, { field: 'description', displayName: 'description', width: 120, enableCellEdit: true },
+            { field: 'quantity', displayName: 'quantity', enableCellEdit: true }, { field: 'addons', displayName: 'addons', width: 120, enableCellEdit: false }, { field: 'remove', displayName: '', cellTemplate: removeTemplate }]
     };
 
     $scope.removeRow = function () {
