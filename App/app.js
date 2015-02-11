@@ -1,5 +1,6 @@
 ﻿
-var app = angular.module('myApp', ['ngRoute', 'ngGrid'])
+var app = angular.module('myApp', ['ngRoute', 'ngTouch',
+'ui.grid', 'ui.grid.edit'])
 
     .config([
         '$routeProvider', function($routeProvider) {
