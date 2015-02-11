@@ -1,5 +1,5 @@
 ﻿'use strict';
-
+var removeTemplate = '<input type="button" value="remove" ng-click="getExternalScopes().removeRow(row)" />';
 app.controller('tireController', [
     '$scope', function($scope) {
 
@@ -20,6 +20,11 @@ app.controller('tireController', [
                     { id: '17 inch mags', addon: '17 inch mags' },
                     { id: '18 inch mags', addon: '18 inch mags' }
                 ]
+            },
+            {
+                field: 'remove',
+                displayName: '',
+                cellTemplate: removeTemplate
             }
         ];
 
@@ -41,6 +46,21 @@ app.controller('tireController', [
 
 
         $scope.gridOptions.data = tiredata;
+
+        $scope.addData = function () {
+            var n = $scope.gridOptions.data.length + 1;
+            $scope.gridOptions.data.push({
+                "brand": "" ,
+                "description": "",
+                "quantity": 0
+            });
+        };
+
+        $scope.gridOptions.removeRow =  function (row) {
+                var index = $scope.gridOptions.data.indexOf(row.entity);
+                $scope.gridOptions.data.splice(index, 1);
+            
+        };
 
     }
 ])
