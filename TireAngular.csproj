@@ -70,11 +70,11 @@
     <Content Include="App\app.js" />
     <Content Include="App\controllers\aboutController.js" />
     <Content Include="App\controllers\homeController.js" />
-    <Content Include="App\controllers\tireController.js" />
+    <Content Include="App\controllers\tirelistController.js" />
     <Content Include="App\Index.html" />
     <Content Include="App\views\about.html" />
     <Content Include="App\views\home.html" />
-    <Content Include="App\views\tire.html" />
+    <Content Include="App\views\tirelist.html" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />

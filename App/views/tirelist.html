@@ -1,0 +1,65 @@
+﻿<style type="text/css">
+    .gridStyle {
+        border: 1px solid rgb(212,212,212);
+        width: 700px; 
+        height: 300px;
+    }
+
+        label {
+        display: inline-block;
+        width: 120px;
+        vertical-align: middle;
+    }
+
+    input {
+        display: inline-block;
+        vertical-align: middle;
+        margin-bottom: 5px;
+    }
+
+    input.ng-invalid {
+        border: solid red 2px;
+    }
+
+        select {
+        width: 150px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+</style>
+
+<article class="col-lg-8 col-lg-offset-1 col-sm-7 col-sm-offset-1 col-lg-push-3 col-sm-push-4 ">  
+    
+    <div class="container-fluid" ng-controller="tirelistController">
+        <h4>Order Tire maintenance</h4>
+        <div ui-grid="gridOptions" ui-grid-edit class="grid"></div>
+    </div>
+    <br/>
+    <!--<div>
+        <form name="tireForm" ng-submit="submitData(tire, 'ajaxSubmitResult1')" novalidate>
+            <label for="brand">brand:</label>
+            <input id="brand" type="text" name="brand" ng-model="tire.brand" required /><br />
+            <label for="description">description:</label>
+            <input id="description" type="text" name="description" ng-model="tire.description" required /><br />
+            <label for="quantity">quantity:</label>
+            <input id="quantity" type="number" min="0" ng-model="tire.quantity" /><br />
+            <br />
+            <label for="addons">Addons:</label>
+            <select id="addons" ng-model="tire.addons">
+                <option value="15inch">15 inches mags</option>
+                <option value="17inch">17 inches mags</option>
+                <option value="18inch">18 inches mags</option>
+            </select><br />
+            <button type="submit"
+                    ng-disabled="tireForm.$invalid">
+                Submit
+            </button>
+        </form>
+    </div>-->
+
+</article>
+
+<aside class="col-lg-3 col-sm-4 col-lg-pull-9 col-sm-pull-8">
+    <h5>sidebar</h5>
+</aside>
+

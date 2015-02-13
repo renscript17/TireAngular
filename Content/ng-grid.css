@@ -333,7 +333,7 @@
   background-color: #c9dde1;
 }
 .ngCell {
-  overflow: visible;
+  overflow: hidden;
   position: absolute;
   top: 0;
   bottom: 0;

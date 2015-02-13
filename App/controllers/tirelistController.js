@@ -1,7 +1,7 @@
 ﻿'use strict';
 var removeTemplate = '<input type="button" value="remove" ng-click="getExternalScopes().removeRow(row)" />';
-app.controller('tireController', [
-    '$scope', function($scope) {
+app.controller('tirelistController', [
+    '$scope', function ($scope) {
 
         $scope.gridOptions = {};
 
@@ -31,10 +31,10 @@ app.controller('tireController', [
 
         $scope.msg = {};
 
-        $scope.gridOptions.onRegisterApi = function(gridApi) {
+        $scope.gridOptions.onRegisterApi = function (gridApi) {
             //set gridApi on scope
             $scope.gridApi = gridApi;
-            gridApi.edit.on.afterCellEdit($scope, function(rowEntity, colDef, newValue, oldValue) {
+            gridApi.edit.on.afterCellEdit($scope, function (rowEntity, colDef, newValue, oldValue) {
                 $scope.msg.lastCellEdited = 'edited row id:' + rowEntity.id + ' Column:' + colDef.name + ' newValue:' + newValue + ' oldValue:' + oldValue;
                 $scope.$apply();
             });
@@ -50,16 +50,16 @@ app.controller('tireController', [
         $scope.addData = function () {
             var n = $scope.gridOptions.data.length + 1;
             $scope.gridOptions.data.push({
-                "brand": "" ,
+                "brand": "",
                 "description": "",
                 "quantity": 0
             });
         };
 
-        $scope.gridOptions.removeRow =  function (row) {
-                var index = $scope.gridOptions.data.indexOf(row.entity);
-                $scope.gridOptions.data.splice(index, 1);
-            
+        $scope.gridOptions.removeRow = function (row) {
+            var index = $scope.gridOptions.data.indexOf(row.entity);
+            $scope.gridOptions.data.splice(index, 1);
+
         };
 
     }

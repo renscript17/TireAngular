@@ -13,9 +13,9 @@ var app = angular.module('myApp', ['ngRoute', 'ngTouch',
                     templateUrl: 'views/about.html',
                     controller: 'aboutController'
                 })
-                .when('/tire', {
-                    templateUrl: 'views/tire.html',
-                    controller: 'tireController'
+                .when('/tirelist', {
+                    templateUrl: 'views/tirelist.html',
+                    controller: 'tirelistController'
                 })
                 .otherwise({
                     redirectTo: '/'
